@@ -1,1 +1,439 @@
-.clr-neutral-light{color:#fff}.bg-neutral-light{background-color:#fff}.clr-neutral-normal{color:gray}.bg-neutral-normal{background-color:gray}.clr-neutral-dark{color:#000}.bg-neutral-dark{background-color:#000}.clr-primary-light{color:#9bd4e7}.bg-primary-light{background-color:#9bd4e7}.clr-primary-normal{color:blue}.bg-primary-normal{background-color:blue}.clr-primary-dark{color:#00008b}.bg-primary-dark{background-color:#00008b}.fs-300{font-size:1rem}.fs-400{font-size:1.125rem}.fs-500{font-size:1.5rem}.margin-8{margin:.5rem}.margin-8-block-start{-webkit-margin-before:.5rem;margin-block-start:.5rem}.margin-8-block-end{-webkit-margin-after:.5rem;margin-block-end:.5rem}.margin-8-block{margin-block:.5rem}.margin-8-inline-start{-webkit-margin-start:.5rem;margin-inline-start:.5rem}.margin-8-inline-end{-webkit-margin-end:.5rem;margin-inline-end:.5rem}.margin-8-inline{margin-inline:.5rem}.padding-8{padding:.5rem}.padding-8-block-start{-webkit-padding-before:.5rem;padding-block-start:.5rem}.padding-8-block-end{-webkit-padding-after:.5rem;padding-block-end:.5rem}.padding-8-block{padding-block:.5rem}.padding-8-inline-start{-webkit-padding-start:.5rem;padding-inline-start:.5rem}.padding-8-inline-end{-webkit-padding-end:.5rem;padding-inline-end:.5rem}.padding-8-inline{padding-inline:.5rem}.margin-12{margin:.75rem}.margin-12-block-start{-webkit-margin-before:.75rem;margin-block-start:.75rem}.margin-12-block-end{-webkit-margin-after:.75rem;margin-block-end:.75rem}.margin-12-block{margin-block:.75rem}.margin-12-inline-start{-webkit-margin-start:.75rem;margin-inline-start:.75rem}.margin-12-inline-end{-webkit-margin-end:.75rem;margin-inline-end:.75rem}.margin-12-inline{margin-inline:.75rem}.padding-12{padding:.75rem}.padding-12-block-start{-webkit-padding-before:.75rem;padding-block-start:.75rem}.padding-12-block-end{-webkit-padding-after:.75rem;padding-block-end:.75rem}.padding-12-block{padding-block:.75rem}.padding-12-inline-start{-webkit-padding-start:.75rem;padding-inline-start:.75rem}.padding-12-inline-end{-webkit-padding-end:.75rem;padding-inline-end:.75rem}.padding-12-inline{padding-inline:.75rem}.margin-16{margin:1rem}.margin-16-block-start{-webkit-margin-before:1rem;margin-block-start:1rem}.margin-16-block-end{-webkit-margin-after:1rem;margin-block-end:1rem}.margin-16-block{margin-block:1rem}.margin-16-inline-start{-webkit-margin-start:1rem;margin-inline-start:1rem}.margin-16-inline-end{-webkit-margin-end:1rem;margin-inline-end:1rem}.margin-16-inline{margin-inline:1rem}.padding-16{padding:1rem}.padding-16-block-start{-webkit-padding-before:1rem;padding-block-start:1rem}.padding-16-block-end{-webkit-padding-after:1rem;padding-block-end:1rem}.padding-16-block{padding-block:1rem}.padding-16-inline-start{-webkit-padding-start:1rem;padding-inline-start:1rem}.padding-16-inline-end{-webkit-padding-end:1rem;padding-inline-end:1rem}.padding-16-inline{padding-inline:1rem}.margin-20{margin:1.25rem}.margin-20-block-start{-webkit-margin-before:1.25rem;margin-block-start:1.25rem}.margin-20-block-end{-webkit-margin-after:1.25rem;margin-block-end:1.25rem}.margin-20-block{margin-block:1.25rem}.margin-20-inline-start{-webkit-margin-start:1.25rem;margin-inline-start:1.25rem}.margin-20-inline-end{-webkit-margin-end:1.25rem;margin-inline-end:1.25rem}.margin-20-inline{margin-inline:1.25rem}.padding-20{padding:1.25rem}.padding-20-block-start{-webkit-padding-before:1.25rem;padding-block-start:1.25rem}.padding-20-block-end{-webkit-padding-after:1.25rem;padding-block-end:1.25rem}.padding-20-block{padding-block:1.25rem}.padding-20-inline-start{-webkit-padding-start:1.25rem;padding-inline-start:1.25rem}.padding-20-inline-end{-webkit-padding-end:1.25rem;padding-inline-end:1.25rem}.padding-20-inline{padding-inline:1.25rem}.margin-32{margin:2rem}.margin-32-block-start{-webkit-margin-before:2rem;margin-block-start:2rem}.margin-32-block-end{-webkit-margin-after:2rem;margin-block-end:2rem}.margin-32-block{margin-block:2rem}.margin-32-inline-start{-webkit-margin-start:2rem;margin-inline-start:2rem}.margin-32-inline-end{-webkit-margin-end:2rem;margin-inline-end:2rem}.margin-32-inline{margin-inline:2rem}.padding-32{padding:2rem}.padding-32-block-start{-webkit-padding-before:2rem;padding-block-start:2rem}.padding-32-block-end{-webkit-padding-after:2rem;padding-block-end:2rem}.padding-32-block{padding-block:2rem}.padding-32-inline-start{-webkit-padding-start:2rem;padding-inline-start:2rem}.padding-32-inline-end{-webkit-padding-end:2rem;padding-inline-end:2rem}.padding-32-inline{padding-inline:2rem}.margin-36{margin:2.25rem}.margin-36-block-start{-webkit-margin-before:2.25rem;margin-block-start:2.25rem}.margin-36-block-end{-webkit-margin-after:2.25rem;margin-block-end:2.25rem}.margin-36-block{margin-block:2.25rem}.margin-36-inline-start{-webkit-margin-start:2.25rem;margin-inline-start:2.25rem}.margin-36-inline-end{-webkit-margin-end:2.25rem;margin-inline-end:2.25rem}.margin-36-inline{margin-inline:2.25rem}.padding-36{padding:2.25rem}.padding-36-block-start{-webkit-padding-before:2.25rem;padding-block-start:2.25rem}.padding-36-block-end{-webkit-padding-after:2.25rem;padding-block-end:2.25rem}.padding-36-block{padding-block:2.25rem}.padding-36-inline-start{-webkit-padding-start:2.25rem;padding-inline-start:2.25rem}.padding-36-inline-end{-webkit-padding-end:2.25rem;padding-inline-end:2.25rem}.padding-36-inline{padding-inline:2.25rem}
+@charset "UTF-8";
+/*
+Credit to Andy Bell's Modern CSS Reset
+@link https://piccalil.li/blog/a-modern-css-reset/
+
+🟣 = additions by Stephanie Eckles 
+Twitter/Github/Codepen: @5t3ph
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, 
+which suggests default styling will be removed 
+
+🟣 Selector updated to reduce specificity
+*/
+ul[role=list],
+ol[role=list] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set core root defaults */
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  /* 🟣 Set base font-family */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  /* 🟣 Relatively sized thickness and offset */
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 🟣 Ensure images with a width attr responsively resize */
+img[width] {
+  height: auto;
+}
+
+/* 🟣 Give SVGs common baseline */
+svg {
+  /* Inherit from text color */
+  fill: currentColor;
+  /* Allow click events to "fall through" */
+}
+
+/* 🟣 Scroll margin allowance above anchor links */
+:target {
+  scroll-margin-top: 2rem;
+}
+
+/* 🟣 Scroll margin allowance below focused elements 
+to ensure they are clearly in view */
+:focus {
+  scroll-margin-bottom: 8vh;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+.clr-neutral-light {
+  color: white;
+}
+
+.bg-neutral-light {
+  background-color: white;
+}
+
+.clr-neutral-normal {
+  color: gray;
+}
+
+.bg-neutral-normal {
+  background-color: gray;
+}
+
+.clr-neutral-dark {
+  color: black;
+}
+
+.bg-neutral-dark {
+  background-color: black;
+}
+
+.clr-primary-light {
+  color: rgb(155, 212, 231);
+}
+
+.bg-primary-light {
+  background-color: rgb(155, 212, 231);
+}
+
+.clr-primary-normal {
+  color: blue;
+}
+
+.bg-primary-normal {
+  background-color: blue;
+}
+
+.clr-primary-dark {
+  color: darkblue;
+}
+
+.bg-primary-dark {
+  background-color: darkblue;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-500 {
+  font-size: 1.5rem;
+}
+
+.margin-8 {
+  margin: 0.5rem;
+}
+.margin-8-block-start {
+  margin-block-start: 0.5rem;
+}
+.margin-8-block-end {
+  margin-block-end: 0.5rem;
+}
+.margin-8-block {
+  margin-block: 0.5rem;
+}
+.margin-8-inline-start {
+  margin-inline-start: 0.5rem;
+}
+.margin-8-inline-end {
+  margin-inline-end: 0.5rem;
+}
+.margin-8-inline {
+  margin-inline: 0.5rem;
+}
+
+.padding-8 {
+  padding: 0.5rem;
+}
+.padding-8-block-start {
+  padding-block-start: 0.5rem;
+}
+.padding-8-block-end {
+  padding-block-end: 0.5rem;
+}
+.padding-8-block {
+  padding-block: 0.5rem;
+}
+.padding-8-inline-start {
+  padding-inline-start: 0.5rem;
+}
+.padding-8-inline-end {
+  padding-inline-end: 0.5rem;
+}
+.padding-8-inline {
+  padding-inline: 0.5rem;
+}
+
+.margin-12 {
+  margin: 0.75rem;
+}
+.margin-12-block-start {
+  margin-block-start: 0.75rem;
+}
+.margin-12-block-end {
+  margin-block-end: 0.75rem;
+}
+.margin-12-block {
+  margin-block: 0.75rem;
+}
+.margin-12-inline-start {
+  margin-inline-start: 0.75rem;
+}
+.margin-12-inline-end {
+  margin-inline-end: 0.75rem;
+}
+.margin-12-inline {
+  margin-inline: 0.75rem;
+}
+
+.padding-12 {
+  padding: 0.75rem;
+}
+.padding-12-block-start {
+  padding-block-start: 0.75rem;
+}
+.padding-12-block-end {
+  padding-block-end: 0.75rem;
+}
+.padding-12-block {
+  padding-block: 0.75rem;
+}
+.padding-12-inline-start {
+  padding-inline-start: 0.75rem;
+}
+.padding-12-inline-end {
+  padding-inline-end: 0.75rem;
+}
+.padding-12-inline {
+  padding-inline: 0.75rem;
+}
+
+.margin-16 {
+  margin: 1rem;
+}
+.margin-16-block-start {
+  margin-block-start: 1rem;
+}
+.margin-16-block-end {
+  margin-block-end: 1rem;
+}
+.margin-16-block {
+  margin-block: 1rem;
+}
+.margin-16-inline-start {
+  margin-inline-start: 1rem;
+}
+.margin-16-inline-end {
+  margin-inline-end: 1rem;
+}
+.margin-16-inline {
+  margin-inline: 1rem;
+}
+
+.padding-16 {
+  padding: 1rem;
+}
+.padding-16-block-start {
+  padding-block-start: 1rem;
+}
+.padding-16-block-end {
+  padding-block-end: 1rem;
+}
+.padding-16-block {
+  padding-block: 1rem;
+}
+.padding-16-inline-start {
+  padding-inline-start: 1rem;
+}
+.padding-16-inline-end {
+  padding-inline-end: 1rem;
+}
+.padding-16-inline {
+  padding-inline: 1rem;
+}
+
+.margin-20 {
+  margin: 1.25rem;
+}
+.margin-20-block-start {
+  margin-block-start: 1.25rem;
+}
+.margin-20-block-end {
+  margin-block-end: 1.25rem;
+}
+.margin-20-block {
+  margin-block: 1.25rem;
+}
+.margin-20-inline-start {
+  margin-inline-start: 1.25rem;
+}
+.margin-20-inline-end {
+  margin-inline-end: 1.25rem;
+}
+.margin-20-inline {
+  margin-inline: 1.25rem;
+}
+
+.padding-20 {
+  padding: 1.25rem;
+}
+.padding-20-block-start {
+  padding-block-start: 1.25rem;
+}
+.padding-20-block-end {
+  padding-block-end: 1.25rem;
+}
+.padding-20-block {
+  padding-block: 1.25rem;
+}
+.padding-20-inline-start {
+  padding-inline-start: 1.25rem;
+}
+.padding-20-inline-end {
+  padding-inline-end: 1.25rem;
+}
+.padding-20-inline {
+  padding-inline: 1.25rem;
+}
+
+.margin-32 {
+  margin: 2rem;
+}
+.margin-32-block-start {
+  margin-block-start: 2rem;
+}
+.margin-32-block-end {
+  margin-block-end: 2rem;
+}
+.margin-32-block {
+  margin-block: 2rem;
+}
+.margin-32-inline-start {
+  margin-inline-start: 2rem;
+}
+.margin-32-inline-end {
+  margin-inline-end: 2rem;
+}
+.margin-32-inline {
+  margin-inline: 2rem;
+}
+
+.padding-32 {
+  padding: 2rem;
+}
+.padding-32-block-start {
+  padding-block-start: 2rem;
+}
+.padding-32-block-end {
+  padding-block-end: 2rem;
+}
+.padding-32-block {
+  padding-block: 2rem;
+}
+.padding-32-inline-start {
+  padding-inline-start: 2rem;
+}
+.padding-32-inline-end {
+  padding-inline-end: 2rem;
+}
+.padding-32-inline {
+  padding-inline: 2rem;
+}
+
+.margin-36 {
+  margin: 2.25rem;
+}
+.margin-36-block-start {
+  margin-block-start: 2.25rem;
+}
+.margin-36-block-end {
+  margin-block-end: 2.25rem;
+}
+.margin-36-block {
+  margin-block: 2.25rem;
+}
+.margin-36-inline-start {
+  margin-inline-start: 2.25rem;
+}
+.margin-36-inline-end {
+  margin-inline-end: 2.25rem;
+}
+.margin-36-inline {
+  margin-inline: 2.25rem;
+}
+
+.padding-36 {
+  padding: 2.25rem;
+}
+.padding-36-block-start {
+  padding-block-start: 2.25rem;
+}
+.padding-36-block-end {
+  padding-block-end: 2.25rem;
+}
+.padding-36-block {
+  padding-block: 2.25rem;
+}
+.padding-36-inline-start {
+  padding-inline-start: 2.25rem;
+}
+.padding-36-inline-end {
+  padding-inline-end: 2.25rem;
+}
+.padding-36-inline {
+  padding-inline: 2.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
