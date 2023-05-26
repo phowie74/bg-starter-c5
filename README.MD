@@ -13,7 +13,7 @@ build process optimises css/js and copies to theme directory
 Requires node tools to build, test and push 
 - [Node](https://nodejs.org/en/download)
 
-Built on macOS using Visual Studio Code and intended for ConcreteCMS install on LAMP stack so tweaks may be requred for different tools/platforms
+Built on macOS using Visual Studio Code and intended for ConcreteCMS install on LAMP stack so tweaks may be required for different tools/platforms
 
 ## Installation
 
@@ -33,6 +33,13 @@ Start watching sass files and open the living style guide using browser-sync
 
     npm start
 
+Styles created in /build/scss/
+Sass output to /build/css/styles.css (with map)
+Javascript added to /build/js/styles.js
+Update /build/index.htm to see changes to stylesheet
+
+styles.css and scripts.js copied over to theme directory ready for build process
+
 ## Usage
 
 Start the project running to watch for changes to theme files and open browser-sync session for testing changes
@@ -48,6 +55,9 @@ Build style sheets and optimise files for final theme deployment
 ```bash
 npm run build
 ```
+
+build process runs postcss and css nano on styles.css and uglifyjs on scripts.js to minify
+
 
 ## Built With
 
