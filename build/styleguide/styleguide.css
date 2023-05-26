@@ -17,7 +17,7 @@
 .bg-page {
   width: min(100% - 2rem, 1200px);
   margin-inline: auto;
-  color: #2c2d6c;
+  color: #333;
   line-height: 1.4;
 }
 
@@ -34,14 +34,19 @@ h2.bg,
 h3.bg,
 p.bg {
   font-family: Georgia, serif;
-  color: #828283;
+  color: #666;
   font-weight: normal;
   max-width: 60ch;
 }
 
 a.bg {
   font-size: 80%;
-  color: #828283;
+  color: #666;
+}
+
+a.bg[href^="#"] {
+  display: inline-block;
+  margin-block-start: 2rem;
 }
 
 hr.bg {
@@ -53,7 +58,7 @@ hr.bg {
 pre.bg-code,
 code.bg-code,
 .bg-code {
-  color: #2c2d6c;
+  color: #333;
   background: #eee;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -69,7 +74,7 @@ code.bg-code:before,
   padding: 0.5rem;
   text-transform: uppercase;
   content: attr(data-lang);
-  background: #2c2d6c;
+  background: #666;
   color: #ebf3f6;
 }
 pre.bg-code code,
@@ -92,10 +97,10 @@ code.bg-code code,
 .bg-box {
   padding: 0.5rem;
   margin-inline: -0.5rem;
-  margin-block: 2rem;
+  margin-block-end: 2rem;
   background: #ebf3f6;
   font-family: Georgia, serif;
-  color: #828283;
+  color: #666;
   font-weight: normal;
 }
 .bg-box h2, .bg-box h3 {
@@ -117,6 +122,7 @@ details {
 summary {
   list-style: none;
   font-family: Georgia, serif;
+  font-size: 1.5rem;
   margin: 0 -1rem;
   padding: 0.2rem 1rem;
   display: flex;
