@@ -1,7 +1,7 @@
 $bg-light: #ebf3f6 !default;
 $bg-mid: #828283 !default;
 $bg-dark: #2c2d6c !default;
-$bg-sans: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !default;
+$bg-sans: Georgia, serif !default;
 
 .sr-only, .visually-hidden {
     border: 0;
@@ -100,6 +100,11 @@ font-family: 'Source Code Pro', Monaco, Menlo, Consolas, "Courier New", monospac
 	font-family: $bg-sans;
 	color: $bg-mid;
 	font-weight: normal;
+
+	& h2,
+	& h3 {
+		font-family: $bg-sans;
+	}
 }
 .bg-white {
 	padding: 1rem;

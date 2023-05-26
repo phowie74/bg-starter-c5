@@ -112,327 +112,594 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.clr-neutral-light {
-  color: white;
-}
-
-.bg-neutral-light {
-  background-color: white;
-}
-
-.clr-neutral-normal {
-  color: gray;
-}
-
-.bg-neutral-normal {
-  background-color: gray;
-}
-
-.clr-neutral-dark {
-  color: black;
-}
-
-.bg-neutral-dark {
-  background-color: black;
-}
-
-.clr-primary-light {
-  color: rgb(155, 212, 231);
-}
-
-.bg-primary-light {
-  background-color: rgb(155, 212, 231);
-}
-
-.clr-primary-normal {
-  color: blue;
-}
-
-.bg-primary-normal {
-  background-color: blue;
-}
-
-.clr-primary-dark {
-  color: darkblue;
-}
-
-.bg-primary-dark {
-  background-color: darkblue;
-}
-
-.fs-300 {
+/*
+$type-scale: (
+  small:( // Minor third
+    300: 1rem,
+    400: 1.125rem,
+    500: 1.563rem,
+    600: 1.953rem,
+    700: 2.441rem,
+    800: 3.052rem
+  ),
+  big:( // Augmented fourth
+    300: 1rem,
+    400: 1.25rem,
+    500: 2rem,
+    600: 2.827rem,
+    700: 4rem,
+    800: 5.653rem
+  )
+)
+*/
+.ccm-page {
+  color: #333;
+  font-family: system-ui, sans-serif;
+  font-weight: 400;
   font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  min-height: 0.01vw;
+  line-height: 1.4;
+}
+.ccm-page h1, .ccm-page .h1,
+.ccm-page h2, .ccm-page .h2,
+.ccm-page h3, .ccm-page .h3,
+.ccm-page h4, .ccm-page .h4,
+.ccm-page h5, .ccm-page .h5 {
+  font-family: system-ui, sans-serif;
+  line-height: calc(2px + 2ex + 2px);
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-weight: 400;
+}
+.ccm-page h1, .ccm-page .h1 {
+  font-size: 2.44140625rem;
+  font-size: clamp(1.6357421875rem, 4.8056640625vw + 1rem, 2.44140625rem);
+  min-height: 0.01vw;
+}
+.ccm-page h2, .ccm-page .h2 {
+  font-size: 1.953125rem;
+  font-size: clamp(1.30859375rem, 4.64453125vw + 1rem, 1.953125rem);
+  min-height: 0.01vw;
+}
+.ccm-page h3, .ccm-page .h3 {
+  font-size: 1.5625rem;
+  font-size: clamp(1.046875rem, 4.515625vw + 1rem, 1.5625rem);
+  min-height: 0.01vw;
+}
+.ccm-page h4, .ccm-page .h4 {
+  font-size: 1.25rem;
+  font-size: clamp(1rem, 4.25vw + 1rem, 1.25rem);
+  min-height: 0.01vw;
+}
+.ccm-page h5, .ccm-page .h5 {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  min-height: 0.01vw;
+}
+.ccm-page hr {
+  margin-block: 2rem;
+  border: none;
+  border-top: solid 1px #999;
+  height: 0;
+  padding: 0 !important;
+}
+.ccm-page a {
+  color: inherit;
+  text-decoration: none;
+}
+.ccm-page strong,
+.ccm-page b,
+.ccm-page .text-strong {
+  font-weight: 700;
+}
+.ccm-page em,
+.ccm-page i,
+.ccm-page text-italic {
+  font-family: system-ui, sans-serif;
+}
+.ccm-page .text-large,
+.ccm-page .text-lead {
+  font-size: 1.1em;
+  color: #333;
+}
+.ccm-page small,
+.ccm-page .text-small {
+  font-size: 0.85em;
+}
+
+/*
+
+KEVIN POWELL EXTRAS?
+
+VARIABLE FONT SETUP
+* {
+    font-variation-settings:
+      'wght' var(--font-weight, 375),
+      'wdth' var(--font-width, 80);
+}
+
+// This is setting the font-sizes
+// based on the ones in the abstract
+// folder, go there to make updates
+h1, .h1 { font-size: --fs-800; }
+h2, .h2 { --flow-spacer: 1.5em; font-size: --fs-700; }
+h3, .h3 { --flow-spacer: 1.5em; font-size: --fs-600; }
+h4, .h4 { font-size: --fs-500; }
+
+  .title {
+    font-size: clamp(var(--fs-600), calc(1rem + 5vw), 5rem);
+  }
+
+  .article-snippet-title {
+    --font-weight: 600;
+  }
+
+  time + p {
+    font-size: 1.25em;
+    margin: 2em 0 1em !important;
+  }
+
+p:not([class]),
+ul:not([class]),
+li:not([class]) {
+  max-width: 60ch;
+}
+
+*/
+.clr-primary-100 {
+  color: hsl(210, 100%, 85%);
+}
+
+.bg-primary-100 {
+  background-color: hsl(210, 100%, 85%);
+}
+
+.clr-primary-200 {
+  color: hsl(210, 100%, 75%);
+}
+
+.bg-primary-200 {
+  background-color: hsl(210, 100%, 75%);
+}
+
+.clr-primary-300 {
+  color: hsl(210, 100%, 50%);
+}
+
+.bg-primary-300 {
+  background-color: hsl(210, 100%, 50%);
+}
+
+.clr-primary-400 {
+  color: hsl(210, 100%, 30%);
+}
+
+.bg-primary-400 {
+  background-color: hsl(210, 100%, 30%);
+}
+
+.clr-primary-500 {
+  color: hsl(210, 100%, 12%);
+}
+
+.bg-primary-500 {
+  background-color: hsl(210, 100%, 12%);
+}
+
+.clr-secondary-100 {
+  color: hsl(153, 43%, 85%);
+}
+
+.bg-secondary-100 {
+  background-color: hsl(153, 43%, 85%);
+}
+
+.clr-secondary-200 {
+  color: hsl(153, 43%, 70%);
+}
+
+.bg-secondary-200 {
+  background-color: hsl(153, 43%, 70%);
+}
+
+.clr-secondary-300 {
+  color: hsl(153, 43%, 42%);
+}
+
+.bg-secondary-300 {
+  background-color: hsl(153, 43%, 42%);
+}
+
+.clr-secondary-400 {
+  color: hsl(153, 43%, 30%);
+}
+
+.bg-secondary-400 {
+  background-color: hsl(153, 43%, 30%);
+}
+
+.clr-secondary-500 {
+  color: hsl(153, 43%, 15%);
+}
+
+.bg-secondary-500 {
+  background-color: hsl(153, 43%, 15%);
+}
+
+.clr-accent-100 {
+  color: hsl(146, 100%, 80%);
+}
+
+.bg-accent-100 {
+  background-color: hsl(146, 100%, 80%);
+}
+
+.clr-accent-200 {
+  color: hsl(146, 100%, 65%);
+}
+
+.bg-accent-200 {
+  background-color: hsl(146, 100%, 65%);
+}
+
+.clr-accent-300 {
+  color: hsl(146, 100%, 50%);
+}
+
+.bg-accent-300 {
+  background-color: hsl(146, 100%, 50%);
+}
+
+.clr-accent-400 {
+  color: hsl(146, 100%, 35%);
+}
+
+.bg-accent-400 {
+  background-color: hsl(146, 100%, 35%);
+}
+
+.clr-accent-500 {
+  color: hsl(146, 100%, 20%);
+}
+
+.bg-accent-500 {
+  background-color: hsl(146, 100%, 20%);
+}
+
+.clr-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-neutral-100 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.clr-neutral-200 {
+  color: hsl(0, 0%, 87%);
+}
+
+.bg-neutral-200 {
+  background-color: hsl(0, 0%, 87%);
+}
+
+.clr-neutral-300 {
+  color: hsl(0, 0%, 80%);
+}
+
+.bg-neutral-300 {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.clr-neutral-700 {
+  color: hsl(0, 0%, 40%);
+}
+
+.bg-neutral-700 {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.clr-neutral-800 {
+  color: hsl(0, 0%, 30%);
+}
+
+.bg-neutral-800 {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.clr-neutral-900 {
+  color: hsl(0, 0%, 15%);
+}
+
+.bg-neutral-900 {
+  background-color: hsl(0, 0%, 15%);
+}
+
+.fs-900 {
+  font-size: 3.75rem;
+}
+
+.fs-800 {
+  font-size: 3rem;
+}
+
+.fs-600 {
+  font-size: 1.5rem;
+}
+
+.fs-500 {
+  font-size: 1.3125rem;
 }
 
 .fs-400 {
   font-size: 1.125rem;
 }
 
-.fs-500 {
-  font-size: 1.5rem;
+.fs-300 {
+  font-size: 1rem;
 }
 
 .margin-8 {
   margin: 0.5rem;
 }
-.margin-8-block-start {
+.margin-block-start-8 {
   margin-block-start: 0.5rem;
 }
-.margin-8-block-end {
+.margin-block-end-8 {
   margin-block-end: 0.5rem;
 }
-.margin-8-block {
+.margin-block-8 {
   margin-block: 0.5rem;
 }
-.margin-8-inline-start {
+.margin-inline-start-8 {
   margin-inline-start: 0.5rem;
 }
-.margin-8-inline-end {
+.margin-inline-end-8 {
   margin-inline-end: 0.5rem;
 }
-.margin-8-inline {
+.margin-inline-8 {
   margin-inline: 0.5rem;
 }
 
 .padding-8 {
   padding: 0.5rem;
 }
-.padding-8-block-start {
+.padding-block-start-8 {
   padding-block-start: 0.5rem;
 }
-.padding-8-block-end {
+.padding-block-end-8 {
   padding-block-end: 0.5rem;
 }
-.padding-8-block {
+.padding-block-8 {
   padding-block: 0.5rem;
 }
-.padding-8-inline-start {
+.padding-inline-start-8 {
   padding-inline-start: 0.5rem;
 }
-.padding-8-inline-end {
+.padding-inline-end-8 {
   padding-inline-end: 0.5rem;
 }
-.padding-8-inline {
+.padding-inline-8 {
   padding-inline: 0.5rem;
 }
 
 .margin-12 {
   margin: 0.75rem;
 }
-.margin-12-block-start {
+.margin-block-start-12 {
   margin-block-start: 0.75rem;
 }
-.margin-12-block-end {
+.margin-block-end-12 {
   margin-block-end: 0.75rem;
 }
-.margin-12-block {
+.margin-block-12 {
   margin-block: 0.75rem;
 }
-.margin-12-inline-start {
+.margin-inline-start-12 {
   margin-inline-start: 0.75rem;
 }
-.margin-12-inline-end {
+.margin-inline-end-12 {
   margin-inline-end: 0.75rem;
 }
-.margin-12-inline {
+.margin-inline-12 {
   margin-inline: 0.75rem;
 }
 
 .padding-12 {
   padding: 0.75rem;
 }
-.padding-12-block-start {
+.padding-block-start-12 {
   padding-block-start: 0.75rem;
 }
-.padding-12-block-end {
+.padding-block-end-12 {
   padding-block-end: 0.75rem;
 }
-.padding-12-block {
+.padding-block-12 {
   padding-block: 0.75rem;
 }
-.padding-12-inline-start {
+.padding-inline-start-12 {
   padding-inline-start: 0.75rem;
 }
-.padding-12-inline-end {
+.padding-inline-end-12 {
   padding-inline-end: 0.75rem;
 }
-.padding-12-inline {
+.padding-inline-12 {
   padding-inline: 0.75rem;
 }
 
 .margin-16 {
   margin: 1rem;
 }
-.margin-16-block-start {
+.margin-block-start-16 {
   margin-block-start: 1rem;
 }
-.margin-16-block-end {
+.margin-block-end-16 {
   margin-block-end: 1rem;
 }
-.margin-16-block {
+.margin-block-16 {
   margin-block: 1rem;
 }
-.margin-16-inline-start {
+.margin-inline-start-16 {
   margin-inline-start: 1rem;
 }
-.margin-16-inline-end {
+.margin-inline-end-16 {
   margin-inline-end: 1rem;
 }
-.margin-16-inline {
+.margin-inline-16 {
   margin-inline: 1rem;
 }
 
 .padding-16 {
   padding: 1rem;
 }
-.padding-16-block-start {
+.padding-block-start-16 {
   padding-block-start: 1rem;
 }
-.padding-16-block-end {
+.padding-block-end-16 {
   padding-block-end: 1rem;
 }
-.padding-16-block {
+.padding-block-16 {
   padding-block: 1rem;
 }
-.padding-16-inline-start {
+.padding-inline-start-16 {
   padding-inline-start: 1rem;
 }
-.padding-16-inline-end {
+.padding-inline-end-16 {
   padding-inline-end: 1rem;
 }
-.padding-16-inline {
+.padding-inline-16 {
   padding-inline: 1rem;
 }
 
 .margin-20 {
   margin: 1.25rem;
 }
-.margin-20-block-start {
+.margin-block-start-20 {
   margin-block-start: 1.25rem;
 }
-.margin-20-block-end {
+.margin-block-end-20 {
   margin-block-end: 1.25rem;
 }
-.margin-20-block {
+.margin-block-20 {
   margin-block: 1.25rem;
 }
-.margin-20-inline-start {
+.margin-inline-start-20 {
   margin-inline-start: 1.25rem;
 }
-.margin-20-inline-end {
+.margin-inline-end-20 {
   margin-inline-end: 1.25rem;
 }
-.margin-20-inline {
+.margin-inline-20 {
   margin-inline: 1.25rem;
 }
 
 .padding-20 {
   padding: 1.25rem;
 }
-.padding-20-block-start {
+.padding-block-start-20 {
   padding-block-start: 1.25rem;
 }
-.padding-20-block-end {
+.padding-block-end-20 {
   padding-block-end: 1.25rem;
 }
-.padding-20-block {
+.padding-block-20 {
   padding-block: 1.25rem;
 }
-.padding-20-inline-start {
+.padding-inline-start-20 {
   padding-inline-start: 1.25rem;
 }
-.padding-20-inline-end {
+.padding-inline-end-20 {
   padding-inline-end: 1.25rem;
 }
-.padding-20-inline {
+.padding-inline-20 {
   padding-inline: 1.25rem;
 }
 
 .margin-32 {
   margin: 2rem;
 }
-.margin-32-block-start {
+.margin-block-start-32 {
   margin-block-start: 2rem;
 }
-.margin-32-block-end {
+.margin-block-end-32 {
   margin-block-end: 2rem;
 }
-.margin-32-block {
+.margin-block-32 {
   margin-block: 2rem;
 }
-.margin-32-inline-start {
+.margin-inline-start-32 {
   margin-inline-start: 2rem;
 }
-.margin-32-inline-end {
+.margin-inline-end-32 {
   margin-inline-end: 2rem;
 }
-.margin-32-inline {
+.margin-inline-32 {
   margin-inline: 2rem;
 }
 
 .padding-32 {
   padding: 2rem;
 }
-.padding-32-block-start {
+.padding-block-start-32 {
   padding-block-start: 2rem;
 }
-.padding-32-block-end {
+.padding-block-end-32 {
   padding-block-end: 2rem;
 }
-.padding-32-block {
+.padding-block-32 {
   padding-block: 2rem;
 }
-.padding-32-inline-start {
+.padding-inline-start-32 {
   padding-inline-start: 2rem;
 }
-.padding-32-inline-end {
+.padding-inline-end-32 {
   padding-inline-end: 2rem;
 }
-.padding-32-inline {
+.padding-inline-32 {
   padding-inline: 2rem;
 }
 
 .margin-36 {
   margin: 2.25rem;
 }
-.margin-36-block-start {
+.margin-block-start-36 {
   margin-block-start: 2.25rem;
 }
-.margin-36-block-end {
+.margin-block-end-36 {
   margin-block-end: 2.25rem;
 }
-.margin-36-block {
+.margin-block-36 {
   margin-block: 2.25rem;
 }
-.margin-36-inline-start {
+.margin-inline-start-36 {
   margin-inline-start: 2.25rem;
 }
-.margin-36-inline-end {
+.margin-inline-end-36 {
   margin-inline-end: 2.25rem;
 }
-.margin-36-inline {
+.margin-inline-36 {
   margin-inline: 2.25rem;
 }
 
 .padding-36 {
   padding: 2.25rem;
 }
-.padding-36-block-start {
+.padding-block-start-36 {
   padding-block-start: 2.25rem;
 }
-.padding-36-block-end {
+.padding-block-end-36 {
   padding-block-end: 2.25rem;
 }
-.padding-36-block {
+.padding-block-36 {
   padding-block: 2.25rem;
 }
-.padding-36-inline-start {
+.padding-inline-start-36 {
   padding-inline-start: 2.25rem;
 }
-.padding-36-inline-end {
+.padding-inline-end-36 {
   padding-inline-end: 2.25rem;
 }
-.padding-36-inline {
+.padding-inline-36 {
   padding-inline: 2.25rem;
 }
 
