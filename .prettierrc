@@ -1,5 +1,9 @@
 {
-    "tabWidth": 4,
-    "bracketSameLine": true,
-    "bracketSpacing": true
+  "tabWidth": 2,
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "jsxBracketSameLine": true,
+  "proseWrap": "never",
+  "printWidth": 600
 }
