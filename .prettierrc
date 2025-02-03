@@ -1,9 +1,22 @@
 {
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 3000,
   "tabWidth": 2,
-  "bracketSameLine": true,
+  "useTabs": false,
   "bracketSpacing": true,
+  "bracketSameLine": true,
+  "singleAttributePerLine": true,
   "htmlWhitespaceSensitivity": "strict",
   "jsxBracketSameLine": true,
   "proseWrap": "never",
-  "printWidth": 600
+  "overrides": [
+    {
+      "files": "*.php",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }
